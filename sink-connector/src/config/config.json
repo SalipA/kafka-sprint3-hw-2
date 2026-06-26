@@ -1,0 +1,14 @@
+{
+  "name": "prometheus-connector",
+  "config": {
+    "connector.class": "ru.practicum.kafka_sprint_3.PrometheusSinkConnector",
+    "tasks.max": "1",
+    "prometheus.url": "http://localhost",
+    "prometheus.port": "9877",
+    "topics": "metrics-topic",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "key.converter.schemas.enable": "false"
+  }
+}

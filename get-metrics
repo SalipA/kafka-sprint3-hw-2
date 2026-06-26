@@ -1,0 +1,2 @@
+curl -G 'http://localhost:9090/api/v1/query' --data-urlencode 'query={__name__=~"Alloc|FreeMemory|PollCount|TotalMemory"}'
+
